@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriram's SpiceHub</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="D:/Chatbot/frond end/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: #ff5733;
+            padding: 10px;
+            color: #fff;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #f0f0f0;
+        }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            max-width: 1200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        /* Chatbot positioning */
+        .chat-bot {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border: none;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">HOME</a> |
+            <a href="#menu">MENU</a> |
+            <a href="#location">LOCATION</a> |
+            <a href="#aboutus">ABOUT US</a> |
+            <a href="#contactus">CONTACT US</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="D:/Chatbot/frond end/srirams spicehub banner.jpg" alt="Sriram's SpiceHub Banner">
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <img src="D:/Chatbot/frond end/menu1.jpg" alt="Menu item 1">
+        <img src="D:/Chatbot/frond end/menu2.jpg" alt="Menu item 2">
+        <img src="D:/Chatbot/frond end/menu3.jpg" alt="Menu item 3">
+    </section>
+
+    <section id="location">
+        <h2>Location</h2>
+        <p>38 Chennai, Tamil Nadu</p>
+        <!-- Add map widget here -->
+    </section>
+
+    <section id="contactus">
+        <h2>Contact Us</h2>
+        <p>Got questions? Want to place an order? Call us at +91 9110779855 or email us at info@sriramspicehub.com</p>
+    </section>
+
+    <!-- Chatbot iframe positioned to show up automatically -->
+    <iframe class="chat-bot" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/06d5ee73-dac6-4e51-b908-a1141b026bb6"></iframe>
+</body>
+</html>
